@@ -24,12 +24,12 @@ class ConfirmDefault extends Component {
                   type="button"
                   onClick={ () => this.props.onCancel(true) }
                   className="btn btn-md">
-                  Cancelar
+                  { this.props.cancelTitle ? this.props.cancelTitle : 'Cancel' }
                 </button>
                 <button
                   onClick={ () => this.props.onConfirm(true) }
                   className="btn btn-md btn-primary">
-                  Confirmar
+                  { this.props.confirmTitle ? this.props.confirmTitle : 'Confirm' }
                 </button>
               </div>
             }
