@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class ConfirmDefault extends Component {
+class ModalDefault extends Component {
 
   renderContent(children) {
     return children && Array.isArray(children) ? children.map(item => item ) :  children
@@ -42,8 +42,8 @@ class ConfirmDefault extends Component {
   }
 };
 
-ConfirmDefault.propTypes = {
+ModalDefault.propTypes = {
   options: PropTypes.object,
 };
 
-export default ConfirmDefault;
+export default ModalDefault;
